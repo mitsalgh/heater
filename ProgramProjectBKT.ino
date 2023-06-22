@@ -1,6 +1,6 @@
 //         ##********PROJECT HMI BERDINE CREATIVE TEKNOLOGI**********##
-int Volt_in = 7 ;
-int Curr_in = 8 ;
+int Volt_in = 7 ;   // pin untuk ke empat sensor
+int Curr_in = 8 ;    // pin untuk ke empat sensor
 float Volt_set = 0;             //Variables for the ones voltage values 
 float Volt_ten_set = 0;         //Variables for the tenths voltage values 
 float Volt_hun_set = 0;         //Variables for the hundredths voltage values 
