@@ -38,12 +38,22 @@ void loop() {
   timer.run();
   
   if(Serial2.available() > 7){
-    for(int a = 0; a < 8; a++){
-      dataInput[a] = Serial2.read();
-    }
+    // for(int a = 0; a < 8; a++){
+    //   dataInput[a] = Serial2.read();
+    //   Serial.print(dataInput[a]);
+    //   Serial.print("\t");
+    // }
+    // Serial.println();
     suhuValue1 = ((dataInput[0] << 8) + dataInput[1]) / 100.0;
     suhuValue2 = ((dataInput[2] << 8) + dataInput[3]) / 100.0;
     suhuValue3 = ((dataInput[4] << 8) + dataInput[5]) / 100.0;
     suhuValue4 = ((dataInput[6] << 8) + dataInput[7]) / 100.0;
+    // Serial.print(suhuValue1);
+    // Serial.print("\t");
+    // Serial.print(suhuValue2);
+    // Serial.print("\t");
+    // Serial.print(suhuValue3);
+    // Serial.print("\t");
+    // Serial.println(suhuValue4);
   }
 }
